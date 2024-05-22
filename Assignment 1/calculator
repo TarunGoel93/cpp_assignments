@@ -1,0 +1,31 @@
+// 6) write a program to make basic calculator.
+
+#include<iostream>
+using namespace std;
+
+int main()
+{
+    float a,b;
+    cout<<"Enter the first number : ";
+    cin>>a;
+    cout<<"Enter the second number : ";
+    cin>>b;
+    char op;
+    cout<<"Enter the operator: ";
+    cin>>op;
+    
+    if(op=='+'){
+        cout<<"The addtion of "<<a<<" and "<<b<<" is : "<<a+b;
+    }
+    else if(op=='-'){
+         cout<<"The subtraction of "<<a<<" and "<<b<<" is : "<<a-b;
+    }
+    else if(op=='*'){
+         cout<<"The multiplication of "<<a<<" and "<<b<<" is : "<<a*b;
+    }
+    else if(op=='/'){
+         cout<<"The division of "<<a<<" and "<<b<<" is : "<<a/b;
+    }
+    
+    return 0;
+}
