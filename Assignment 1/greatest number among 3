@@ -1,0 +1,27 @@
+// 3) Write a program to determine greatest number among three number.
+
+#include<iostream>
+using namespace std;
+
+int main()
+{
+   float a,b,c;
+   cout<<"Enter the first number: ";
+   cin>>a;
+   cout<<"Enter the second number: ";
+   cin>>b;
+   cout<<"Enter the third number: ";
+   cin>>c;
+   
+   if(a>b && a>c){
+       cout<<a<<" is greater than "<<b<<" and "<<c;
+   }
+   else if(b>a && b>c){
+       cout<<b<<" is greater than "<<a<<" and "<<c;
+   }
+   else{
+       cout<<c<<" is greater than "<<a<<" and "<<b;
+   }
+    
+return 0;
+}
