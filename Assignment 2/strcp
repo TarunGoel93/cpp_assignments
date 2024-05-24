@@ -1,0 +1,15 @@
+// 25)Write a program to use stcpy( )
+
+#include <iostream>
+#include <cstring>
+using namespace std;
+
+int main() {
+    char source[] = "Hello, world!";
+    char destination[50];
+    strcpy(destination, source); 
+    
+    cout << "Copied string: " << destination << std::endl;
+    
+     return 0;
+}
