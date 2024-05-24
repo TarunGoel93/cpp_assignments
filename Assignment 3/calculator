@@ -1,0 +1,45 @@
+// 52)write a program to make a calculator using functions .
+
+#include<iostream>
+using namespace std;
+
+int add(int a, int b){
+    return a+b;
+}
+int sub(int a, int b){
+    return a-b;
+}
+int mul(int a, int b){
+    return a*b;
+}
+int divi(int a, int b){
+    return a/b;
+}
+
+int main()
+{
+    int x,y;
+    char op;\
+    
+    cout<<"Enter the first number: ";
+    cin>>x;
+    cout<<"Enter the second number: ";
+    cin>>y;
+    cout<<"Enter the operator: ";
+    cin>>op;
+    
+    if(op=='+'){
+        cout<<"The addition of "<<x<<" and "<<y<<" is : "<<add(x,y);
+    }
+    else if(op=='-'){
+        cout<<"The subtraction of "<<x<<" and "<<y<<" is : "<<sub(x,y);
+    }
+    else if(op=='*'){
+        cout<<"The multiplication of "<<x<<" and "<<y<<" is : "<<mul(x,y);
+    }
+    else if(op=='/'){
+        cout<<"The division of "<<x<<" and "<<y<<" is : "<<divi(x,y);
+    }
+    
+return 0;
+}
