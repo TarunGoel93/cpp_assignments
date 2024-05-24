@@ -1,0 +1,28 @@
+37)write a program to find prime number.
+
+#include<iostream>
+using namespace std;
+
+string prime(int x , int c=0){
+    for(int i=1;i<=x;i++){
+        if(x%i==0){
+            c++;
+        }
+    }
+    if(c==2){
+        return "Entered number is a prime number.";
+    }
+    else{
+        return "Entered nuber is not a prime number";
+    }
+};
+
+int main()
+{
+    int a;
+    cout<<"Enter the number: ";
+    cin>>a;
+    cout<<prime(a);
+    
+    return 0;
+}
