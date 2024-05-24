@@ -1,0 +1,30 @@
+// 20)Write a program to add 2 same order matrix.
+
+#include <iostream>
+using namespace std;
+int main() {
+    const int rows = 3;
+    const int cols = 3;
+    int matrix1[rows][cols] = {
+        {1, 2, 3},
+        {4, 5, 6},
+        {7, 8, 9}
+    };
+    int matrix2[rows][cols] = {
+        {9, 8, 7},
+        {6, 5, 4},
+        {3, 2, 1}
+    };
+    for (int i = 0; i < rows; ++i) {
+        int sum1 = 0;
+        int sum2 = 0;
+        for (int j = 0; j < cols; ++j) {
+            sum1 += matrix1[i][j];
+            sum2 += matrix2[i][j];
+        }
+        cout << "Sum of row " << i + 1 << " in matrix1: " << sum1 << endl;
+        cout << "Sum of row " << i + 1 << " in matrix2: " << sum2 << endl;
+    }
+
+    return 0;
+}
