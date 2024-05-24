@@ -1,0 +1,13 @@
+// 23)Write a program to find the size of string.
+
+#include<iostream>
+#include<cstring>
+using namespace std;
+int main()
+{
+    string l1;
+    cout<<"Enter the first letter: ";
+    cin>>l1;
+    cout<<"The size of the "<<l1<<" is: "<<l1.length();
+return 0;
+}
