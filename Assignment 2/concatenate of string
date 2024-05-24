@@ -1,0 +1,14 @@
+// 22)Write a program to concatenate a strings.
+#include<iostream>
+#include<cstring>
+using namespace std;
+int main()
+{
+    string l1,l2;
+    cout<<"Enter the first letter: ";
+    cin>>l1;
+    cout<<"Enter the second letter: ";
+    cin>>l2;
+    cout<<"The concatenation of "<<l1<<" and "<<l2<<" is: "<<l1+l2;
+return 0;
+}
