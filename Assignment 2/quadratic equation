@@ -1,0 +1,23 @@
+#include<iostream>
+#include<cmath>
+using namespace std;
+
+int main()
+{
+  float a,b,c,x,y;
+  cout<<"Enter the value of a: ";
+  cin>>a;
+  cout<<"Enter the value of b: ";
+  cin>>b;
+  cout<<"Enter the value of c: ";
+  cin>>c;
+  
+  float disc=sqrt(b*b-4*a*c);
+  x= (-b+disc)*2*a;
+  y= (-b-disc)*2*a;
+  
+  cout<<"Root 1: "<<x;
+  cout<<"Root 2: "<<y;
+  
+return 0;
+}
