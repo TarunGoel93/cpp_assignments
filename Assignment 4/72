@@ -1,0 +1,11 @@
+#include <iostream>
+using namespace std;
+int main() {
+int i = 0;
+while (i < 5) {
+cout << i << " ";
+i = i + 2;
+}
+    return 0;
+}  //Output  0 2 4 
+
