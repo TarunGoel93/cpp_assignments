@@ -1,0 +1,10 @@
+#include <iostream>
+using namespace std;
+int multiply(int x, int y) {
+return x * y;
+}
+int main() {
+int result = multiply(3, 4);
+cout<<"Result: "<< result <<endl;
+return 0;
+} // output  Result: 12
