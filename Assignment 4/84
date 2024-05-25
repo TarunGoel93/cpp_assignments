@@ -1,0 +1,13 @@
+#include <iostream>
+using namespace std;
+double divide(double x, double y) {
+if (y == 0) {
+cout <<"Error: Division by zero!"<<endl;
+return 0;
+}
+return x / y;
+}
+int main() {
+cout << divide(10, 2) << endl;
+return 0;
+} // output  5
