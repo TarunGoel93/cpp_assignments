@@ -1,0 +1,18 @@
+#include <iostream>
+using namespace std;
+class Rectangle {
+public:
+    int length;
+    int width;
+
+    int area() {
+        return length * width;
+    }
+};
+int main() {
+    Rectangle rect;
+    rect.length = 5;
+    rect.width = 3;
+    cout << "Area: " << rect.area() << endl; 
+    return 0;
+} // output Area: 15
