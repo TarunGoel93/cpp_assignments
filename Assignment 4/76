@@ -1,0 +1,9 @@
+#include <iostream>
+using namespace std;
+void greet(string name1, string name2) {
+    cout << "Hello, " << name1 << " and " << name2 << "!" << endl;
+}
+int main() {
+    greet("Alice", "Bob");
+    return 0;
+} // output  Hello, Alice and Bob! 
