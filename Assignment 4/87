@@ -1,0 +1,17 @@
+#include <iostream>
+using namespace std;
+class Student {
+public:
+string name;
+int age;
+void display() {
+cout <<"Name: "<<name <<", Age: "<< age << endl;
+}
+};
+int main() {
+Student s;
+s.name = "Alice";
+s.age = 20;
+s.display();
+return 0;
+} // output  Name: Alice, Age: 20
