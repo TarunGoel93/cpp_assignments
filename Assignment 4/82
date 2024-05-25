@@ -1,0 +1,9 @@
+#include <iostream>
+using namespace std;
+void greet(string name1) {
+    cout << "Hello, " << name1 << "!" << endl;
+}
+int main() {
+    greet("Bob");
+    return 0;
+} // output  Hello, Bob!
