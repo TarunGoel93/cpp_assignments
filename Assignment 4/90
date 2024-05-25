@@ -1,0 +1,16 @@
+#include <iostream>
+using namespace std;
+
+class Car {
+public:
+    string model;
+    string brand;
+};
+
+int main() {
+    Car c;
+    c.model = "Civic";
+    c.brand = "Honda";
+    cout << "Car: " << c.model << " by " << c.brand << endl;
+    return 0;
+}  // output Car: Civic by Honda
