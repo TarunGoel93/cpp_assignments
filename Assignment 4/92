@@ -1,0 +1,20 @@
+#include <iostream>
+using namespace std;
+class Employee {
+public:
+    string name;
+    double salary;
+
+    void raiseSalary(double increase) {
+        salary += increase;
+    }
+};
+int main() {
+    Employee emp;
+    emp.name = "Alice";
+    emp.salary = 50000;
+    emp.raiseSalary(2000);
+    cout << "New salary: " << emp.salary << endl;
+
+    return 0;
+} // output New salary: 52000
