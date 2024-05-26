@@ -1,0 +1,47 @@
+119. Problem Statement: Define a class Book to represent a book with attributes like
+title, author, and publication year. Implement member functions to compare two
+books based on their publication years.
+Objectives: To practice defining classes and implementing member functions for
+comparison operations.
+Functionalities: Compare publication years of two books.
+
+#include<iostream>
+using namespace std;
+
+class Book{
+    private:
+    string title,author;
+    int year;
+    public:
+    void input(){
+        cout<<"Enter the title of the book1: ";
+        cin>>title;
+        cout<<"Enter the author of the book1: ";
+        cin>>author;
+        cout<<"Enter the year of the book1: ";
+        cin>>year;
+        cout<<"Enter the title of the book2: ";
+        cin>>title;
+        cout<<"Enter the author of the book2: ";
+        cin>>author;
+        cout<<"Enter the year of the book2: ";
+        cin>>year;
+    }
+    void output(){
+        cout<<"Book 1 : "<<endl;
+        cout<<"Title: "<<title;
+        cout<<"Author: "<<author;
+        cout<<"Year: "<<year;
+        cout<<"Book 2 : "<<endl;
+        cout<<"Title: "<<title;
+        cout<<"Author: "<<author;
+        cout<<"Year: "<<year;
+        }
+};
+
+int main()
+{
+    Book b;
+    b.input();
+    b.output();
+}
