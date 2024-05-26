@@ -1,0 +1,50 @@
+115. Problem Statement: Create a class Time to represent time in hours, minutes,
+and seconds. Implement member functions to add two time objects together.
+
+Objectives: To understand operator overloading and member function implementation
+for custom data types.
+Functionalities: Add two time objects together.
+
+#include<iostream>
+using namespace std;
+
+class Time{
+    private:
+    double hours1 , minutes1 , hours2 , minutes2 , r1 ,r2 ,r3 , r4;
+    public:
+    Time() : hours1(0) , minutes1(0), minutes2(0) , hours2(0)  {}
+    void input(){
+        cout<<"Enter the first time : "<<endl;
+        cout<<"Enter the hours: ";
+        cin>>hours1;
+        cout<<"Enter the minutes: ";
+        cin>>minutes1;
+        cout<<"Enter the second time : "<<endl;
+        cout<<"Enter the hours: ";
+        cin>>hours2;
+        cout<<"Enter the minutes: ";
+        cin>>minutes2;
+    }
+    void calculate(){
+        r1 = hours1+hours2;
+        r2 = minutes1+minutes2;
+        r3=r2-60;
+        r4=r1+1;
+    }
+    void output(){
+       if(r2>=60){
+           cout<<"Total Time : "<<r4<<":"<<r3<<endl;
+       }else{
+           cout<<"Total Time : "<<r1<<":"<<r2<<endl;
+       }
+    }
+    
+};
+
+int main()
+{
+    Time t;
+    t.input();
+    t.calculate();
+    t.output();
+}
