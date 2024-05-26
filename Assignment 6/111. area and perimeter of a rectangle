@@ -1,0 +1,45 @@
+/*111. Problem Statement: Create a class called Rectangle to represent a rectangle.
+Define member variables to store its length and width. Implement member functions
+to calculate its area and perimeter.
+Objectives: To practice defining classes, member variables, and member functions in
+C++.
+Functionalities: Calculate area and perimeter of a rectangle.*/
+
+#include<iostream>
+using namespace std;
+
+class Rectangle{
+    private:
+    int length;
+    int width;
+    public:
+    Rectangle(int l , int w){
+        length=l;
+        width=w;
+    }
+    int area(){
+        return length*width;
+    }
+    int perimeter(){
+        return 2*(length+width);
+    }
+};
+
+int main()
+{
+    int l,w;
+    cout<<"Enter the length of the rectangle: ";
+    cin>>l;
+    cout<<"Enter the width of the rectangle: ";
+    cin>>w;
+    
+    Rectangle rect(l,w);
+    
+    int result=rect.area();
+    int result1=rect.perimeter();
+    
+    cout<<"The area of the rectangle is: "<<result<<endl;
+    cout<<"The perimeter of the rectangle is: "<<result1;
+  
+ return 0;  
+}
