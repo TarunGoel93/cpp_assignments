@@ -1,0 +1,25 @@
+42)write a program to reverse a string .
+
+#include <iostream>
+#include <string>
+using namespace std;
+
+// Function to reverse and print a string
+void reverseString( string str) {
+    int size = str.length();
+    for (int i = size - 1; i >= 0; --i) {
+        cout << str[i];
+    }
+    cout << endl;
+}
+
+int main() {
+    string letter;
+
+    cout << "Enter the string: ";
+    cin >> letter;
+
+    reverseString(letter);
+
+    return 0;
+}
