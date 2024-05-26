@@ -1,0 +1,36 @@
+117. Problem Statement: Create a class Circle to represent a circle with a radius.
+Implement member functions to calculate its area and circumference.
+Objectives: To practice defining classes and implementing member functions for
+geometric calculations.
+Functionalities: Calculate area and circumference of a circle.
+
+#include<iostream>
+using namespace std;
+
+class Circle{
+    private:
+    double radius;
+    public:
+    Circle():radius(0){}
+    void input(){
+        cout<<"Enter the radius of the circle: ";
+        cin>>radius;
+    }
+    int area(){
+        return 3.14*radius*radius;
+    }
+    int circumference(){
+        return 2*3.14*radius;
+    }
+   
+};
+
+int main()
+{
+    Circle c;
+    c.input();
+    int result=c.area();
+    int r1=c.circumference();
+    cout<<"The area of the circle is: "<<result<<endl;
+    cout<<"The circumference of the circle is: "<<r1<<endl;
+}
