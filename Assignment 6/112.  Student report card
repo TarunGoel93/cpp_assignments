@@ -1,0 +1,43 @@
+112. Problem Statement: Implement a class Student to represent a students details
+like name, roll number, and marks in three subjects. Provide member functions to
+input and display student details, as well as calculate the average marks.
+Objectives: To understand how to define classes with multiple member variables and
+member functions.
+Functionalities: Input student details, display details, calculate average marks.
+
+#include<iostream>
+using namespace std;
+
+class Student{
+    private:
+    string name;
+    int rollNumber,marks1,marks2,marks3,result;
+    public:
+    
+    Student(): name(""),rollNumber(0),marks1(0),marks2(0),marks3(0){}
+
+    void input(){
+        cout<<"Enter your name: ";
+        cin>>name;
+        cout<<"Enter your roll number: ";
+        cin>>rollNumber;
+        cout<<"Enter the marks of your three subjects: ";
+        cin>>marks1>>marks2>>marks3;
+    }
+    void calculate(){
+        result=(marks1+marks2+marks3)/3;
+    }
+    void output(){
+        cout<<"Name: "<<name;
+        cout<<"Roll Number: "<<rollNumber;
+        cout<<"Average Marks: "<<result;
+    }
+};
+
+int main()
+{
+    Student s;
+    s.input();
+    s.calculate();
+    s.output();
+}
