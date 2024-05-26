@@ -1,0 +1,59 @@
+113. Problem Statement: Create a class BankAccount to represent a simple bank
+account. Include member variables for account number, account holder&#39;s name, and
+balance. Implement member functions to deposit and withdraw money from the
+account.
+Objectives: To practice implementing member functions for handling data
+manipulation in a class.
+Functionalities: Deposit and withdraw money from a bank account.
+
+#include<iostream>
+using namespace std;
+
+class BankAccount{
+    private:
+    int accountNumber,balance;
+    string accountHolderName;
+    public:
+     BankAccount(): accountNumber(0),balance(0),accountHolderName(""){}
+     void input(){
+         cout<<"Enter your account number: ";
+         cin>>accountNumber;
+         cout<<"Enter your account holder name: ";
+         cin>>accountHolderName;
+         }
+     void deposit(double amount) {
+            if (amount > 0) {
+                balance += amount;
+                cout << "Deposited: " << amount << endl;
+                cout << "New Balance: " << balance << endl;
+            } else {
+                cout << "Invalid deposit amount." << endl;
+            }
+        }
+     void withdraw(double amount) {
+            if (amount > 0 && amount <= balance) {
+                balance -= amount;
+                cout << "Withdrawn: " << amount << endl;
+                cout << "New Balance: " << balance << endl;
+            } else {
+                cout << "Invalid withdrawal amount or insufficient balance." << endl;
+            }
+        }
+    void display()  {
+            cout << "Account Number: " << accountNumber << endl;
+            cout << "Account Holder Name: " << accountHolderName << endl;
+            cout << "Balance: " << balance << endl;
+        }
+    
+};
+
+int main()
+{
+    BankAccount account;
+    account.input();
+    account.display();
+    account.deposit(500.0);
+    account.withdraw(200.0);
+    account.withdraw(1500.0);
+    
+}
