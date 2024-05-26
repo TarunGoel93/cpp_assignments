@@ -1,0 +1,41 @@
+118. Problem Statement: Implement a class Complex to represent complex numbers.
+Include member functions to add, subtract, multiply, and divide two complex
+numbers.
+Objectives: To understand how to implement arithmetic operations for custom data
+types.
+Functionalities: Perform arithmetic operations on complex numbers.
+
+#include<iostream>
+using namespace std;
+
+class Complex{
+    private:
+    double x1,y1,x2,y2;
+    public:
+    void input(){
+        cout<<"Enter the first number (x+yi): "<<endl;
+        cout<<"Enter the first value (x): ";
+        cin>>x1;
+        cout<<"Enter the first value (y): ";
+        cin>>y1;
+        cout<<"Enter the second number (x+yi): "<<endl;
+        cout<<"Enter the second value (x): ";
+        cin>>x2;
+        cout<<"Enter the second value (y): ";
+        cin>>y2;
+    }
+   
+    void output(){
+        cout<<"Addition : "<<x1+x2<<"+"<<y1+y2<<"i"<<endl;
+        cout<<"Subtraction : "<<x1-x2<<"+"<<y1-y2<<"i"<<endl;
+        cout<<"Multiplication : "<<x1*x2<<"+"<<y1*y2<<"i"<<endl;
+        cout<<"Division : "<<x1/x2<<"+"<<y1/y2<<"i"<<endl;
+    }
+};
+
+int main()
+{
+    Complex c;
+    c.input();
+    c.output();
+}
