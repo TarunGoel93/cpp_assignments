@@ -1,0 +1,36 @@
+114. Problem Statement: Define a class Car with member variables for car make,
+model, and year. Implement member functions to set and get these details.
+Objectives: To learn how to define classes with member functions for setting and
+getting data.
+Functionalities: Set and get car details.
+
+#include<iostream>
+using namespace std;
+
+class Car{
+    private:
+    int year;
+    string make , model;
+    public:
+    Car(): model(""),year(0),make(""){}
+    void set(){
+        cout<<"Enter car maker : ";
+        cin>>make;
+        cout<<"Enter car model : ";
+        cin>>model;
+        cout<<"Enter the year : ";
+        cin>>year;
+    }
+    void get(){
+        cout<<"Make: "<<make<<endl;
+        cout<<"Model: "<<model<<endl;
+        cout<<"Year: "<<year<<endl;
+        }
+};
+
+int main()
+{
+    Car c;
+    c.set();
+    c.get();
+}
