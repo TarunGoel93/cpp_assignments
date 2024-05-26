@@ -1,0 +1,43 @@
+116. Problem Statement: Define a class Employee to represent employee details like
+employee ID, name, and salary. Implement a member function to give a raise to the
+employee&#39;s salary.
+Objectives: To practice defining classes and implementing member functions for data
+manipulation.
+Functionalities: Give a raise to an employee&#39;s salary.
+
+#include<iostream>
+using namespace std;
+
+class Employee{
+    private:
+    string name;
+    int id,salary,amount;
+    public:
+    Employee():name(""),id(0),salary(0),amount(0){}
+    void input(){
+        cout<<"Enter your name: ";
+        cin>>name;
+        cout<<"Enter your id: ";
+        cin>>id;
+    }
+    void salar(int amount){
+             if (amount > 0) {
+                salary += amount;
+            }
+    }
+    void display(){
+            cout << "Id Number: " << id << endl;
+            cout << "Employee Name: " << name << endl;
+            cout << "Salary: " << salary << endl;
+    }
+};
+
+int main()
+{
+  Employee e;
+  e.input();
+  e.display();
+  e.salar(500);
+  e.display();
+
+}
