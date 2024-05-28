@@ -1,0 +1,47 @@
+Q 131 Create a base class Shape with an attribute color. Derive a class Circle
+with additional attributes radius and a method to calculate the area of the
+circle. Use constructor initialization to initialize the attributes.
+Constraints:
+ The color attribute should be a string.
+ The radius attribute should be a double.
+
+#include<iostream>
+using namespace std;
+
+class Shape{
+    private:
+    string color;
+    public:
+    void input(){
+        cout<<"Enter the color of the circle: ";
+        cin>>color;
+    }
+    void output(){
+        cout<<"Color : "<<color<<endl;
+    }
+};
+
+class Circle : public Shape {
+    private:
+    int radius;
+    public:
+    void input(){
+        Shape::input();
+        cout<<"Enter the radius of the circle: ";
+        cin>>radius;
+    }
+
+    void output(){
+        Shape::output();
+         double  r=3.14*radius*radius;
+         cout<<"Area: "<<r;
+    }
+    
+};
+
+int main()
+{
+    Circle c;
+    c.input();
+    c.output();
+}
