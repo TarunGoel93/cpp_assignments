@@ -1,0 +1,50 @@
+Create a base class Person with attributes name and age. Derive a class
+Student from Person with an additional attribute studentID. Implement a
+method to display the details of the student.
+Constraints:
+ The name attribute should be a string.
+ The age attribute should be an integer.
+ The studentID attribute should be a string.
+
+#include<iostream>
+using namespace std;
+
+class Person {
+private:
+    string name;
+    int age;
+public:
+    void input() {
+        cout << "Enter your name: ";
+        cin >> name;
+        cout << "Enter your age: ";
+        cin >> age;
+    }
+    void output() {
+        cout << "Name: " << name << endl << "Age: " << age << endl;
+    }
+};
+
+class Student : public Person {
+private:
+    string studentID;
+public:
+    void input() {
+        // Call base class input() method to input name and age
+        Person::input();
+        cout << "Enter your student id: ";
+        cin >> studentID;
+    }
+    void output() {
+        // Call base class output() method to output name and age
+        Person::output();
+        cout << "StudentID: " << studentID << endl;
+    }
+};
+
+int main() {
+    Student s;
+    s.input();
+    s.output();
+    return 0;
+}
