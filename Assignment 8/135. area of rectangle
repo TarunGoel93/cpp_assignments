@@ -1,0 +1,36 @@
+Q 135. Create a base class Shape with a method area that returns 0. Derive a
+class Rectangle from Shape with additional attributes width and height, and
+override the area method to return the area of the rectangle.
+Constraints:
+The width and height attributes should be doubles.
+
+#include<iostream>
+using namespace std;
+
+class Shape{
+    public:
+    int area(){
+        return 0;
+    }
+};
+
+class Rectangle : public Shape{
+    private:
+    int height , width;
+    public:
+    void input(){
+        cout<<"Enter the height of the rectangle : ";
+        cin>>height;
+        cout<<"Enter the width of the rectangle : ";
+        cin>>width;
+    }
+    void output(){
+        cout<<"Area : "<<height*width<<endl;
+    }
+};
+
+int main(){
+    Rectangle rect;
+    rect.input();
+    rect.output();
+}
