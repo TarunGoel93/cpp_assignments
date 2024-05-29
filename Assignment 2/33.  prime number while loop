@@ -1,0 +1,21 @@
+33)Write a program to find prime number
+
+#include<iostream>
+using namespace std;
+int main()
+{
+  int a,c=0;
+  cout<<"Enter the number: ";
+  cin>>a;
+  for(int i=1;i<=a;i++){
+      if(a%i==0){
+          c++;
+      }
+  }
+  if(c==2){
+      cout<<a<<" is a prime number.";
+  }else{
+      cout<<a<<" is not a prime number.";
+  }
+return 0;
+}
