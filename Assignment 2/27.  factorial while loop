@@ -1,0 +1,17 @@
+27) Write a program to find factorial of a number using while loop.
+
+#include<iostream>
+using namespace std;
+int main()
+{
+    int x,fact=1;
+    cout<<"Enter the number: ";
+    cin>>x;
+    int i=x;
+    while(i>=1){
+        fact*=i;
+        i--;
+    }
+    cout<<"Factorial of "<<x<<" is: "<<fact;
+return 0;
+}
