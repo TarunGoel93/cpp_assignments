@@ -1,0 +1,20 @@
+36) Write a program to print fibonacci series using do statement.
+
+#include <iostream>
+using namespace std;
+int main() 
+{
+    int n, firstTerm = 0, secondTerm = 1, nextTerm;
+    cout << "Enter the number of terms: ";
+    cin >> n;
+    cout << "Fibonacci Series: " << firstTerm << " " << secondTerm << " ";
+    int i = 3;
+    do {
+        nextTerm = firstTerm + secondTerm;
+        cout << nextTerm << " ";
+        firstTerm = secondTerm;
+        secondTerm = nextTerm;
+        i++;
+    } while (i <= n);
+    return 0;
+}
