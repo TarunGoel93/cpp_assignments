@@ -1,0 +1,17 @@
+34) Write a Program to find average of 1st n numbers .
+
+#include<iostream>
+using namespace std;
+int main()
+{
+    float x,i=1,sum=0;
+    cout<<"Enter the number: ";
+    cin>>x;
+    do{
+       sum+=i;
+       i++;
+    }
+    while(i<=x);
+        cout<<"The average of 1 "<<" to "<<x<<" is: "<<sum/2;
+return 0;
+}
