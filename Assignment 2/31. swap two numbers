@@ -1,0 +1,21 @@
+31) write a program to swap two number
+
+#include<iostream>
+using namespace std;
+int main()
+{
+    int a,b,next;
+    cout<<"Enter the first number: ";
+    cin>>a;
+    cout<<"Enter the second number: ";
+    cin>>b;
+    cout<<"Before Swapping: "<<endl;
+    cout<<a<<" "<<b;
+    cout<<endl;
+    next=a;
+    a=b;
+    b=next;
+    cout<<"After Swapping: "<<endl;
+    cout<<a<<" "<<b;
+return 0;
+}
