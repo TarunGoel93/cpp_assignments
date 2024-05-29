@@ -1,0 +1,27 @@
+
+
+#include<iostream>
+using namespace std;
+
+int sum(int arr1[3][3],int rows,int cols){
+    int sum=0;
+    for(int i=0;i<rows;i++){
+        for(int j=0;j<cols;j++){
+            sum+=arr1[i][j];
+        }
+         cout << "Sum of row " << i + 1 << ": " << sum << endl;
+    }
+ 
+};
+int main()
+{
+    const int rows = 3;
+    const int cols = 3;
+    int matrix1[rows][cols] = {
+        {1, 2, 3},
+        {4, 5, 6},
+        {7, 8, 9}
+    };
+    sum(matrix1, rows, cols);
+    return 0;
+}
