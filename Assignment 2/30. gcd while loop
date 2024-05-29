@@ -1,0 +1,21 @@
+30) Write a program for GCD(greatest common divisor).
+
+#include<iostream>
+using namespace std;
+int main()
+{
+    int a,b,g=1;
+    cout<<"Enter the first number: ";
+    cin>>a;
+    cout<<"Enter the second number: ";
+    cin>>b;
+    int i=1;
+    while(i<=a && i<=b){
+        if(a%i==0 && b%i==0){
+            g=i;
+             }
+    i++;
+      }
+       cout<<"The gcd of "<<a<<" and "<<b<<" is: "<<g;
+return 0;
+}
