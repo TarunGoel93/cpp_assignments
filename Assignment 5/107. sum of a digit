@@ -1,0 +1,22 @@
+107. Implement a program to find the sum of digits of a given number using pass by value.
+
+#include<iostream>
+using namespace std;
+
+int sum(int x){
+    int sum=0;
+  while(x!=0){
+        int digit=x%10;
+        sum+=digit;
+        x/=10;
+    }
+    return sum;
+};
+int main()
+{
+    int a;
+    cout<<"Enter the number: ";
+    cin>>a;
+    cout<<sum(a);
+    
+}
